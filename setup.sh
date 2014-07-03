@@ -6,16 +6,26 @@
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
 sudo apt-get install -y curl
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+# curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+wget https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.10.12
-nvm use v0.10.12
+nvm install v0.10.24
+nvm use v0.10.24
+
+# Using http instead of https
+npm config set registry http://registry.npmjs.org/
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
 npm install -g jshint
+
+npm install -g bower
+npm install -g grunt-cli
+npm install -g yo
+npm install -g underscore
+
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
@@ -29,7 +39,7 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+# wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # git pull and install dotfiles as well
 cd $HOME

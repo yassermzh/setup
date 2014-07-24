@@ -26,10 +26,17 @@ sudo apt-get install -y rlwrap
 # http://jshint.com/
 npm install -g jshint
 
-npm install -g bower
-npm install -g grunt-cli
-npm install -g yo
+# Install front-end development tools
+npm install -g grunt-cli bower yo
 npm install -g underscore
+
+# git aware prompt
+mkdir ~/.bash
+cd ~/.bash
+git clone git://github.com/jimeh/git-aware-prompt.git
+
+
+
 
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
@@ -39,7 +46,10 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
-# wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+sudo apt-get install -y screen 
+
 
 # git pull and install dotfiles as well
 cd $HOME

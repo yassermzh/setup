@@ -12,8 +12,8 @@ sh install.sh
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.10.24
-nvm use v0.10.24
+nvm install v0.10.29
+nvm use v0.10.29
 
 # Using http instead of https
 npm config set registry http://registry.npmjs.org/
@@ -35,9 +35,6 @@ mkdir ~/.bash
 cd ~/.bash
 git clone git://github.com/jimeh/git-aware-prompt.git
 
-
-
-
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
 sudo add-apt-repository -y ppa:cassou/emacs
@@ -48,7 +45,8 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-sudo apt-get install -y screen 
+# Install utilities
+sudo apt-get install -y screen tree
 
 
 # git pull and install dotfiles as well

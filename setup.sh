@@ -39,6 +39,8 @@ git clone git://github.com/jimeh/git-aware-prompt.git
 # https://launchpad.net/~cassou/+archive/emacs
 sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
+# sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
+# emacs-nox is without supporing X server, so no themes and sublimity and more. to be used with screen
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install Heroku toolbelt
